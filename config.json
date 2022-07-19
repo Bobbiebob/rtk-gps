@@ -1,0 +1,37 @@
+{
+    "options" : {
+        "nav_options" : ["CLOCK", "DOP", "EOE", "GEOFENCE", "HPPOSECEF", "HPPOSLLH", "ODO", "ORB", "POSECEF", "POSLLH", "PVT", "RELPOSNED", "SAT", "SBAS", "SIG", "SLAS", "STATUS", "SVIN", "TIMEBDS", "TIMEGAL", "TIMEGLO", "TIMELS", "TIMEQZSS", "TIMEUTC", "VELECEF", "VELNED"],
+        "rxm_options" : ["MEASX", "PMREQ", "RAWX", "RLM", "RTCM", "SFRBX"],
+        "rtcm_options" : ["1005", "1006", "1009", "1010", "1074", "1077", "1084", "1087", "1094", "1097", "1124", "1127", "1230", "4072_0",
+            "4072_1"],
+        "nmea_options" : ["DTM", "GBS", "GGA", "GLL", "GNS", "GRS", "GSA", "GST", "GSV", "RMC", "VLW", "VTG", "ZDA"]
+    },
+   
+    "control" : {
+        "ttyPort" : "ttyUSB0",
+        "nav" : ["PVT", "SVIN"],
+        "rtcm" : [],
+        "nmea" : [],
+        "rxm" : [],
+        "svin" : [60, 600],
+        "baud" : 38400
+    },
+
+    "server" :{
+        "ttyPort" : "ttyACM0",
+        "nav" : [],
+        "rtcm" : ["1005", "1074", "1077", "1084", "1087", "1094", "1097", "1124", "1127"],
+        "nmea" : [],
+        "rxm" : [],
+        "svin" : [],
+        "baud" : 38400,
+        "caster" : "ec2-3-127-234-166.eu-central-1.compute.amazonaws.com:",
+        "casterPort" : "2101",
+        "mountpoint" : "/Development_Hoogezand",
+        "str2str" : "app/consapp/str2str/gcc_arm/str2str"
+    }
+   
+    
+    
+    
+}
